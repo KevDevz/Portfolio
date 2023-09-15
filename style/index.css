@@ -1,0 +1,272 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar-nav{
+    margin-left: auto;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+.bg-scroll {
+    background-color: transparent; 
+    transition: background-color 0.3s;
+  }
+  
+  .bg-scroll.show-bg {
+    background-color: #f8f9fa; 
+  }
+  
+/* The switch - the box around the slider */
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    --background: #522ba7;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--background);
+    transition: .5s;
+    border-radius: 30px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 50%;
+    left: 10%;
+    bottom: 15%;
+    box-shadow: inset 8px -4px 0px 0px #fff000;
+    background: var(--background);
+    transition: .5s;
+  }
+  
+  input:checked + .slider {
+    background-color: #522ba7;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(100%);
+    box-shadow: inset 15px -4px 0px 15px #fff000;
+  }
+  .dark-mode {
+    background-color: rgb(21, 21, 33);
+    color: white;
+  }
+
+  .light-mode {
+    background-color: white;
+    color: black;
+  }
+.main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10%;
+    flex: 1;
+    padding: 100px;
+}
+.kboy img{
+    width: 100%;
+    max-width: 1000px;
+}
+.hey{
+    margin-top: 100px;
+    text-align: initial;
+    font-size: clamp(1rem, -3rem + 16vw, 0.1rem);
+}
+.hello{
+    text-align: inherit;
+}
+@media(max-width: 943px){
+    .kboy img{
+        width: 100%;
+        max-width: 1300px;
+        justify-content: center;
+    }
+}
+@media(max-width: 500px){
+    .kboy img{
+        width: 100%;
+        max-width: 1200px;
+    }
+    .hey{
+        justify-content: center;
+        padding: 30px;
+    }
+}
+@media(max-width: 400px){
+    .kboy img{
+          width: 100%;
+          max-width: 500px;
+    }
+}
+.wave {
+    animation-name: wave-animation; 
+    animation-duration: 2.5s;        
+    animation-iteration-count: infinite; 
+    transform-origin: 70% 70%;      
+    display: inline-block;
+  }
+
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+  }
+ 
+.about-me{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 30px;
+}
+.ako{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.woah img{
+    width: 100%;
+    max-width: 400px;
+}
+.text{
+    font-size: clamp(1rem, -3rem + 16vw, 0.1rem);
+    padding: 20px;
+    margin-top: 100px;
+}
+.projects-title{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 100px auto;
+}
+.my-projects{
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 30px;
+    flex-direction: row;
+}
+.projects img{
+    width: 100%;
+    max-width: 500px;
+}
+.projects{
+    background: white;
+    box-shadow: 0 0 10px black;
+    padding: 20px;
+    color: black;
+}
+.projects p{
+    line-height: 1.25rem;
+}
+#vantas-canvas{
+    width: 100%;
+    height: 100vh;
+}
+
+/* testing */
+.container{
+    margin: 100px auto;
+}
+.pics img{
+    width: 100%;
+    max-width: 200px;
+    display: block;
+    height: auto;
+}
+.text ul{
+    list-style: none;
+    margin-top: 20px;
+}
+.text ul li{
+    display: inline-block;
+    margin-right: 25px;
+    position: relative;
+    cursor: pointer;
+    font-size: 30px;
+}
+.text ul li::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    left: 0px;
+    bottom: -6px;
+    transition: width 0.5s;
+}
+.text ul li :hover::after{
+    width: 50%;
+}
+.text ul li .active-link::after{
+    width: 100%;
+}
+.tab-contents {
+    margin-top: 20px;
+    display: none;
+}   
+.tab-contents h3 {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.tab-contents p {
+    margin-top: 5px;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+.tab-links:hover{
+    color: blue;
+}
+/*spans*/
+.spans{
+    background: violet;
+    padding: 5px;
+    border-radius: 10px;
+}
+#vanta-canvas{
+    width: 100%;
+    height: 100%;
+}
+
