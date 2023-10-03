@@ -91,11 +91,13 @@ html{
 }
 .hey{
     margin-top: 100px;
-    text-align: initial;
+    text-align: center;
     font-size: clamp(1rem, -3rem + 16vw, 0.1rem);
+    padding: 0;
 }
 .hello{
-    font-size: clamp(0.9375rem, 0.5469rem + 1.25vw, 1.25rem);}
+    font-size: clamp(0.9375rem, 0.5469rem + 1.25vw, 1.25rem);
+}
 @media(max-width: 943px){
     .kboy img{
         width: 100%;
@@ -139,6 +141,7 @@ html{
   }
 .kiboy{
     color: aqua;
+    font-size: clamp(1.25rem, 0.0781rem + 3.75vw, 2.1875rem);
 }  
 .aspiring{
     color: aqua;
@@ -146,10 +149,11 @@ html{
 /*Kboy*/
 .hii{
     font-weight: 900;
+    font-size: clamp(1.25rem, 0.4688rem + 2.5vw, 1.875rem);
 }
 .kboyz{
     font-weight: 900;
-    font-size: clamp(1.25rem, -0.3125rem + 5vw, 2.5rem);
+    font-size: clamp(1.25rem, 0.0781rem + 3.75vw, 2.1875rem);
 }
 .aspiring{
     font-weight: 900;
