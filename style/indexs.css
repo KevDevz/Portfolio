@@ -87,7 +87,7 @@ html{
 }
 .kboy img{
     width: 100%;
-    max-width: 600px;
+    max-width: 500px;
 }
 .hey{
     margin-top: 100px;
@@ -528,7 +528,7 @@ select, textarea{
     text-align: center;
 }
 .display{
-    padding: 30px;
+    padding: 20px;
     border-radius: 10px;
     background: rgb(23, 22, 22);
 }
